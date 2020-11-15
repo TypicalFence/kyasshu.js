@@ -1,0 +1,22 @@
+{
+  "name": "@kyasshu/core",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "fence <fence@desu-mail.moe>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "test:nyan": "jest --reporters jest-nyancat-reporter",
+    "test:spec": "jest --reporters jest-spec-reporter",
+    "coverage": "jest --coverage",
+    "lint": "eslint ./src/**/*.ts",
+    "fix": "eslint --fix ./src/**/*.ts",
+    "build": "tsc",
+    "prepublish": "build"
+  },
+  "devDependencies": {
+  }
+}
