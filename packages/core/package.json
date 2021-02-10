@@ -17,6 +17,5 @@
     "build": "tsc",
     "prepublish": "build"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
