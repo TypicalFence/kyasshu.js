@@ -63,7 +63,7 @@ describe("MemoryBackend", () => {
 
     it("should be able to check if a key exists", async() => {
         const backend = new MemoryBackend();
-        backend.save("myKey", "300", null);
+        await backend.save("myKey", "300", null);
         const exists = await backend.contains("myKey");
         expect(exists).toBeTruthy();
     });
@@ -76,7 +76,7 @@ describe("MemoryBackend", () => {
 
     it("should be able to delete a cached value", async() => {
         const backend = new MemoryBackend();
-        backend.save("yes", "\"yes\"", null);
+        await backend.save("yes", "\"yes\"", null);
         const didDelete1 = await backend.delete("yes");
         const didDelete2 = await backend.delete("no");
         expect(didDelete1).toBeTruthy();
