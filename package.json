@@ -29,6 +29,7 @@
     "jest-nyancat-reporter": "^2.0.0",
     "jest-spec-reporter": "^1.0.14",
     "lerna": "^3.22.1",
+    "rimraf": "^3.0.2",
     "ts-jest": "^26.5.1",
     "typescript": "^4.0.5"
   }
