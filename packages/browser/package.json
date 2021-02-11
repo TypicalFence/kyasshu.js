@@ -5,6 +5,9 @@
   "author": "fence <fence@desu-mail.moe>",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+    "files": [
+    "/dist"
+  ],
   "scripts": {
     "test": "jest --verbose",
     "test:nyan": "jest --reporters jest-nyancat-reporter",
