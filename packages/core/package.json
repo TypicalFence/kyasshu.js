@@ -1,7 +1,7 @@
 {
   "name": "@kyasshu/core",
   "version": "0.0.0",
-  "description": "> TODO: description",
+  "description": "tiny caching library",
   "author": "fence <fence@desu-mail.moe>",
   "homepage": "",
   "license": "MIT",
@@ -15,7 +15,10 @@
     "lint": "eslint ./src/**/*.ts",
     "fix": "eslint --fix ./src/**/*.ts",
     "build": "tsc",
+    "clean": "rimraf dist",
     "prepublish": "build"
+  },
+  "dependencies": {
   },
   "devDependencies": {}
 }

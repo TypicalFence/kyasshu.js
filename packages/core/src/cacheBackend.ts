@@ -30,7 +30,7 @@ export interface CacheBackend {
      *
      * @param key The key of the value
      * @param value The value to cache
-     * @param ttl How long the value is valid (time to live)
+     * @param ttl How long the value is valid (time to live) in seconds
      * @returns a Promise containing true if saved
      */
     save(key: string, value: string, ttl:number|null): Promise<boolean>

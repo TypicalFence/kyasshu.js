@@ -34,18 +34,22 @@ export class MemoryBackend implements CacheBackend {
     }
 
     async contains(key: string): Promise<boolean> {
-        return this.map.has(key);
+        return await this.fetch(key) !== null;
     }
 
     async delete(key: string): Promise<boolean> {
         return this.map.delete(key);
     }
 
-    // TODO implement ttl
     async fetch(key: string): Promise<string | null> {
         const item = this.map.get(key);
 
         if (typeof item === "undefined") {
+            return null;
+        }
+
+        if (!isItemAlive(item)) {
+            await this.delete(key);
             return null;
         }
 
