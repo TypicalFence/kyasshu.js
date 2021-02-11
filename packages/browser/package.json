@@ -1,0 +1,29 @@
+{
+  "name": "@kyasshu/browser",
+  "version": "0.0.0",
+  "description": "kyashu-backends for browsers",
+  "author": "fence <fence@desu-mail.moe>",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "test:nyan": "jest --reporters jest-nyancat-reporter",
+    "test:spec": "jest --reporters jest-spec-reporter",
+    "coverage": "jest --coverage",
+    "lint": "eslint ./src/**/*.ts",
+    "fix": "eslint --fix ./src/**/*.ts",
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "prepublish": "build"
+  },
+  "license": "MIT",
+  "dependencies": {
+  },
+  "peerDependencies": {
+    "@kyasshu/core": "*"
+  },
+  "devDependencies": {
+    "@kyasshu/core": "*",
+    "node-localstorage": "^2.1.6"
+  }
+}
