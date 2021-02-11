@@ -1,7 +1,7 @@
 {
   "name": "@kyasshu/browser",
   "version": "0.0.0",
-  "description": "kyashu-backends for browsers",
+  "description": "kyasshu-backends for browsers",
   "author": "fence <fence@desu-mail.moe>",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
