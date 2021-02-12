@@ -5,7 +5,7 @@
   "author": "fence <fence@desu-mail.moe>",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-    "files": [
+  "files": [
     "/dist"
   ],
   "scripts": {
@@ -20,13 +20,11 @@
     "prepublish": "build"
   },
   "license": "MIT",
-  "dependencies": {
-  },
   "peerDependencies": {
     "@kyasshu/core": "*"
   },
   "devDependencies": {
-    "@kyasshu/core": "*",
+    "@kyasshu/core": "^0.0.0",
     "node-localstorage": "^2.1.6"
   }
 }

@@ -20,8 +20,5 @@
     "build": "tsc",
     "clean": "rimraf dist",
     "prepublish": "build"
-  },
-  "dependencies": {
-  },
-  "devDependencies": {}
+  }
 }
